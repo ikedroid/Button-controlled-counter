@@ -4,10 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+class Counter extends React.Component {
+  state = {
+    counter: 0
+  }
+  increment = () => {
+    this.setState({
+      counter: this.state.counter+1});
+  }
+  render() {
+    return <div>
+    <p>{this.state.counter}</p>
+    <button onClick={this.increment}>Increment</button>
+    </div>;
+  }
+} 
+const el = <Counter/>;
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  el,
   document.getElementById('root')
 );
 

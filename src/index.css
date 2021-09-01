@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div {
+  position: relative;
+  align-items: center;
+  align-content: center;
+  margin-top: 10%;
+}
+
+p {
+  font-family: cursive;
+  font-size: 50px;
+  color: blue;
+  border-radius: 20%;
+  border-style: groove;
+  border: 1px solid gray;
+  left: 35%;
+  top: 20%;
+  background-color: gray;
+  position:relative;
+  width:fit-content;
+  align-self: center;
+  }
+button {
+  background-color: orange;
+  left: 35%;
+  position:relative;
+  top: auto;
+  align-self: center;
+}
